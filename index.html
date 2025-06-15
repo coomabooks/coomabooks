@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>cooma books</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col">
+  <!-- ヒーローセクション -->
+  <header class="bg-headerBg text-white py-8 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold">
+      <img src="/images/logo.png" alt="coomabooks logo" class="inline-block h-12 md:h-16 mb-2">cooma books
+    </h1>
+    <p class="mt-2 text-xl">「サンタナのだいじ」発売中</p>
+  </header>
+
+  <main class="flex-1 container mx-auto px-4 py-8 space-y-16">
+    <!-- 著書紹介 -->
+    <section id="works">
+      <h2 class="text-3xl font-bold mb-4 text-accent">cooma のえほん</h2>
+      <div class="relative">
+        <button id="prev" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-accent bg-opacity-50 hover:bg-opacity-75 text-white p-4 text-2xl rounded-full z-10">
+          &lt;<!--- Prev --->
+          <span class="sr-only">Previous</span>
+        </button>
+          <div id="slidesContainer" class="overflow-x-auto scroll-smooth">
+          <div id="slides" class="flex flex-nowrap gap-4 snap-x snap-mandatory"></div>
+        </div>
+        <button id="next" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-accent bg-opacity-50 hover:bg-opacity-75 text-white p-4 text-2xl rounded-full z-10">
+          &gt;<!--- Next --->
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 自己紹介 -->
+    <section id="about">
+      <h2 class="text-3xl font-bold mb-4 text-accent">cooma のごあいさつ</h2>
+        <p>はじめまして、cooma（くうま） といいます。</p>
+        <p class="mb-4">小さなぬいぐるみたちが活躍する、やさしい絵本をつくっています。</p>
+        <p>作品は、3〜5歳くらいのお子さまに向けた、ふんわりした言葉づかいと、あたたかいストーリーが特徴です。</p>
+        <p>読み聞かせや、寝る前のひとときにそっと寄り添える絵本を目指しています。</p>
+        <p class="mb-4">イラストは AI を活用していますが、物語にはぬくもりと想いをこめて、1冊ずつ丁寧に届けています。</p>
+        <p>たのしい夢のなかへつながるような、やさしい絵本をこれからもつくっていけたらと思っています。</p>
+        <p class="mb-4">どうぞよろしくお願いいたします。</p>
+    </section>
+
+    <!-- お問い合わせ -->
+    <!-- <section id="contact" class="max-w-lg mx-auto"> -->
+    <section id="contact">
+      <h2 class="text-3xl font-bold mb-4 text-accent">お問い合わせ</h2>
+      <p>お問い合わせは<a href="mailto:coomabooks@crazyblue.net" class="text-accent font-">こちら</a>までお願いします。</p>
+      <!-- <form action="https://form-mailer.jp/f/YOUR_FORM_ID" method="POST" class="space-y-4"> -->
+        <!-- メール件名を設定 -->
+        <!-- <input type="hidden" name="_subject" value="cooma ポートフォリオ お問い合わせ"> -->
+        <!-- 送信完了後のリダイレクト先 -->
+        <!-- <input type="hidden" name="_next" value="https://your-domain.com/thanks.html"> -->
+
+        <!-- <div>
+          <label class="block mb-1" for="name">お名前</label>
+          <input type="text" id="name" name="name" required class="w-full border rounded px-3 py-2" placeholder="お名前">
+        </div>
+        <div>
+          <label class="block mb-1" for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" required class="w-full border rounded px-3 py-2" placeholder="メールアドレス">
+        </div>
+        <div>
+          <label class="block mb-1" for="message">メッセージ</label>
+          <textarea id="message" name="message" required class="w-full border rounded px-3 py-2" rows="5" placeholder="メッセージ"></textarea>
+        </div>
+        <button type="submit" class="bg-accent text-white px-6 py-2 rounded hover:bg-pink-600">送信</button>
+      </form> -->
+    </section>
+  </main>
+
+  <footer class="bg-footerBg text-white text-center py-4 text-sm">
+    &copy; 2025 <img src="/images/logo.png" alt="coomabooks logo" class="inline-block h-12"> All rights reserved.
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
