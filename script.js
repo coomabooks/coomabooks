@@ -3,8 +3,8 @@
  * public/images フォルダに表紙画像ファイルを置き、image プロパティにパスを設定してください。
  */
 const worksData = [
-  { image: '/images/santana_no_daiji.jpg', title: 'サンタナのだいじ', desc: '「"だいじ" って、こんなにうれしい」<br>やさしい言葉で綴る、ぬいぐるみのものがたり', asin: 'B0F92MVYC3' },
-  { image: '/images/santana_special_something.jpg', title: 'Santana’s Special Something', desc: '“Being loved feels so special."<br>A heartwarming story told in gentle, simple words — perfect for reading aloud.', asin: 'B0F2726F8C' },
+  { image: './images/santana_no_daiji.jpg', title: 'サンタナのだいじ', desc: '「"だいじ" って、こんなにうれしい」<br>やさしい言葉で綴る、ぬいぐるみのものがたり', asin: 'B0F92MVYC3' },
+  { image: './images/santana_special_something.jpg', title: 'Santana’s Special Something', desc: '“Being loved feels so special."<br>A heartwarming story told in gentle, simple words — perfect for reading aloud.', asin: 'B0F2726F8C' },
   // 以降、必要に応じてオブジェクトを追加してください
 ];
 
